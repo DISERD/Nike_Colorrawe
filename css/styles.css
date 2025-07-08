@@ -1,0 +1,139 @@
+:root {
+    --font-family: "Roboto", sans-serif;
+    --second-family: "Playfair Display", sans-serif;
+    --third-family: "PT Serif", sans-serif; 
+    
+    --main-button-color: #8E32C6;
+    --main-background-color: #021635;
+    --header-background-color: #012D63;
+    --footer-background-color: #021635;
+    --main-text-color: #FFFFFF;
+    --main-nav-color: #C7C7C7;
+
+
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--font-family);
+    color: var(--main-text-color);
+    background-color: var(--main-background-color);
+}
+
+.container {
+    max-width: 1340px;
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.header {
+    background-color: var(--header-background-color);
+    padding-top: 16px;
+    padding-bottom: 14px;
+}
+
+.header > .container {
+    font-weight: 300;
+    font-size: 24px;
+    color: var(--main-nav-color);
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo-link {
+    width: 130px;
+    height: auto;
+    /* max-width: 150px;
+    height: auto; */
+}
+
+.nav-list, .lang-list {
+    display: flex;
+    gap: 29px;
+}
+
+.nav-link.current, 
+.lang-link.current,
+.nav-item:hover,
+.lang-link:hover {
+    color: var(--main-text-color);
+}
+
+.hero-section {
+    background-image: url(../img/background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 88px;
+    padding-bottom: 188px;
+}
+
+.hero-logo {
+    width: 190px;
+
+}
+
+
+.hero-logo-img {
+    width: 190px;
+    height: auto;
+}
+
+.hero-text-logo {
+    font-family: var(--third-family);
+    font-weight: 400;
+    font-size: 48px;
+    color: var(--main-text-color);
+}
+
+.hero-title {
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 144px;
+    color: var(--main-text-color);
+}
+
+.hero-subtitle {
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 72px;
+    color: var(--main-text-color);
+}
+
+.hero-desc {
+    padding-top: 30px;
+    padding-bottom: 40px;
+    font-weight: 400;
+    font-size: 18px;
+    color: var(--main-text-color);
+
+}
+
+.hero-btn {
+    display: inline-block;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+
+    padding: 20px 60px ;
+    margin: 0 auto;
+
+    font-weight: 400;
+    font-size: 24px;
+    color: var(--main-text-color);
+
+    background-color: var(--main-button-color);
+    border-radius: 10px;
+
+    transition: background-color 0.3s ease, transform 0.1s ease;
+}
+
+.hero-btn:hover,
+.hero-bth:active {
+    background-color: #7A28A8;
+}

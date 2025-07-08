@@ -5,99 +5,120 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ColoRawe - Your dream Nike</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Serif&family=Playfair+Display:ital@0;1&family=Roboto:wght@100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
         integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=PT+Serif&family=Playfair+Display:wght@400..900&family=Roboto:wght@100..900&display=swap">
+
     <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/styles.css">
 </head>
 
 <body>
     <header class="header">
+        <div class="container">
+        <a href="./index.html" class="logo-link">
+            <img src="./img/logo_1.svg" alt="Nike Logo" class="logo-img">
+        </a>
+        
         <nav class="nav">
             <ul class="nav-list">
-                <li class="nav-item"><a class="nav-link" href="./index.html">Main page</a></li>
+                <li class="nav-item"><a class="nav-link current" href="./index.html">Main page</a></li>
                 <li class="nav-item"><a class="nav-link" href="#benefits">Benefits</a></li>
                 <li class="nav-item"><a class="nav-link" href="#advantages">Advantages</a></li>
                 <li class="nav-item"><a class="nav-link" href="#reviews">Reviews</a></li>
                 <li class="nav-item"><a class="nav-link" href="#contacts">Contacts</a></li>
                 <li class="nav-item"><a class="nav-link" href="#order">Order</a></li>
             </ul>
-            <a class="lang-link" href="#">Ua</a>
-            <a class="lang-link" href="#">Eng</a>
         </nav>
+        <ul class="lang-list">
+            <li><a class="lang-link" href="#">Ua</a></li>
+            <li><a class="lang-link current" href="#">Eng</a></li>
+        </ul>
+        </div>
+    </div>
     </header>
 
     <main class="main">
         <section class="hero-section">
-            <h1 class="hero-logo">C&R</h1>
+            <div class="container">
+            <img src="./img/logo_2.svg" alt="logo_2" class="hero-logo">
             <h2 class="hero-title">ColoRawe</h2>
             <h3 class="hero-subtitle">Your dream Nike</h3>
-            <p class="hero-desc">On this site you can find unique Nike sneakers of your dreams. Our site provides you with a wide range of
-                colors for creating exclusive sneakers.</p>
-            <p class="hero-desc">Create an individual style by choosing a custom sneakers.</p>
+            <p class="hero-desc">On this site you can find custom Nike sneakers of your dreams. <br>
+            The original company caт`t create such beautiful <br>
+            sneakers as we do. <br>
+            Good luck finding your way in the world ofcustom sneakers.</p>
             <button class="hero-btn">Buy my Nike</button>
+            </div>
         </section>
 
-        <section class="benefits-section">
-            <div class="benefit-item">
-                <h4 class="benefit-title">Premium Quality</h4>
-                <img class="benefit-img" src="./img/rating.svg" alt="Man with a rating">
-            </div>
-            <div class="benefit-item">
-                <img class="benefit-img" src="./img/sprays.svg" alt="Spray Paint">
-                <h4 class="benefit-title">Indelible paint</h4>
-            </div>
-            <div class="benefit-item">
-                <h4 class="benefit-title">Fast shipping</h4>
-                <img class="benefit-img" src="./img/truck.png" alt="Purple truck">
+        <section class="benefits-section" id="benefits">
+            <div class="container">
+            <ul class="benefits-list">
+                <li class="benefits-item">
+                    <h4 class="benefit-title">Premium Quality</h4>
+                    <img class="benefit-img" src="./img/rating.svg" alt="Man with a rating">
+                </li>
+                <li class="benefits-item">
+                    <img class="benefit-img" src="./img/sprays.svg" alt="Spray Paint">
+                    <h4 class="benefit-title">Indelible paint</h4>
+                </li>
+                <li class="benefits-item">
+                    <h4 class="benefit-title">Fast shipping</h4>
+                    <img class="benefit-img" src="./img/truck.svg" alt="Purple truck">
+                </li>
+            </ul>
             </div>
         </section>
         <section class="reviews-section" id="reviews">
+            <div class="container">
             <h2 class="reviews-title">Reviews</h2>
-            <div class="reviews-list">
-                <div class="review-card">
+            <ul class="reviews-list">
+                <li>
                     <p class="review-text">Sneakers are very comfortable and well painted, nothing has worn off in a year.</p>
-                    <span class="review-date">25.11</span>
+                    <p class="review-date">25.11</p>
                     <div class="review-user">
-                        <img class="review-avatar" src="./img/avatar1.jpg" alt="Photo of John Taylor">
-                        <span class="review-name">John Taylor</span>
-                        <span class="review-member">With us from 2018</span>
+                        <img class="review-avatar" src="./img/avatar1.png" alt="Photo of John Taylor">
+                        <p class="review-name">John Taylor</p>
+                        <p class="review-member">With us from 2018</p>
                     </div>
-                </div>
-                <div class="review-card">
+                </li>
+                <li class="review-card">
                     <p class="review-text">I'm very happy with this color scheme. They match all my clothes.</p>
-                    <span class="review-date">05.01</span>
+                    <p class="review-date">05.01</p>
                     <div class="review-user">
-                        <img class="review-avatar" src="./img/avatar2.jpg" alt="Photo of Elizabeth Garsia">
-                        <span class="review-name">Elizabeth Garsia</span>
-                        <span class="review-member">With us from 2023</span>
+                        <img class="review-avatar" src="./img/avatar2.png" alt="Photo of Elizabeth Garsia">
+                        <p class="review-name">Elizabeth Garsia</p>
+                        <p class="review-member">With us from 2023</p>
                     </div>
-                </div>
-                <div class="review-card">
+                </li>
+                <li class="review-card">
                     <p class="review-text">Just right if you need to go to a party. I use them actively, the paint is super.</p>
-                    <span class="review-date">10.05</span>
+                    <p class="review-date">10.05</p>
                     <div class="review-user">
-                        <img class="review-avatar" src="./img/avatar3.jpg" alt="Photo of Tom Moquare">
-                        <span class="review-name">Tom Moquare</span>
-                        <span class="review-member">With us from 2019</span>
+                        <img class="review-avatar" src="./img/avatar3.png" alt="Photo of Tom Moquare">
+                        <p class="review-name">Tom Moquare</p>
+                        <p class="review-member">With us from 2019</p>
                     </div>
-                </div>
+                </li>
+            </ul>
             </div>
         </section>
 
         <section class="order-section" id="order">
+            <div class="container">
             <h2 class="order-title">Order</h2>
             <div class="order-container container">
                 <form class="order-form">
+                    <div class="email-verefication">
                     <label class="order-label" for="email">
                         <input class="order-email" placeholder="Write your email" type="text">
                         <button class="order-email-button" type="submit">Confirm</button>
                     </label>
+                    </div>
                     <label class="order-label" for="country">
                         <input id="contry" class="order-input" placeholder="Your Country" type="text">
                     </label>
@@ -114,7 +135,6 @@
     </main>
 
     <footer class="footer" id="contacts">
-        <div class="footer-container container">
             <ul class="contacts-list">
                 <li class="contacts-item">
                     <p class="contacts-question">Have a question?</p>
@@ -145,7 +165,6 @@
                 </p>
                 <a class="footer-logo">картинка</a>
             </div>
-        </div>
     </footer>
       
 </body>
