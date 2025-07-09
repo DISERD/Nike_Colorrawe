@@ -113,66 +113,49 @@
             </ul>
             </div>
         </section>
-
         <section class="order-section" id="order">
             <div class="container">
-            <h2 class="order-title">Order</h2>
-            <div class="order-container container">
-                <form class="order-form">
-                    <div class="email-verefication">
-                    <label class="order-label" for="email">
-                        <input class="order-email" placeholder="Write your email" type="text">
-                        <button class="order-email-button" type="submit">Confirm</button>
-                    </label>
-                    </div>
-                    <label class="order-label" for="country">
-                        <input id="contry" class="order-input" placeholder="Your Country" type="text">
-                    </label>
-                    <label class="order-label" for="city">
-                        <input class="order-input" placeholder="Your City" type="text">
-                    </label>
-                    <label class="order-label" for="adress">
-                        <input class="order-input" placeholder="Your Adress" type="text">
-                    </label>
-                    <button class="order-btn" type="submit">Order my Nike</button>
-                </form>
+                <h2 class="order-title">Order</h2>
+                <div class="order-container container">
+                    <form class="order-form">
+                        <div class="email-verification">
+                            <input id="email" class="order-email" placeholder="Write your email" type="email" required />
+                            <button class="order-email-button" type="button">Confirm</button>
+                        </div>
+        
+                        <input id="country" class="order-input" placeholder="Your Country" type="text" required />
+        
+                        <input id="city" class="order-input" placeholder="Your City" type="text" required />
+        
+                        <input id="address" class="order-input" placeholder="Your Address" type="text" required />
+        
+                        <button class="order-btn" type="submit">Order my Nike</button>
+                    </form>
+                </div>
             </div>
         </section>
     </main>
-
     <footer class="footer" id="contacts">
-            <ul class="contacts-list">
-                <li class="contacts-item">
-                    <p class="contacts-question">Have a question?</p>
-                    <p>
-                        <a class="contacts-link" href="mailto:ColoRawe_support@gmail.com">
-                            ColoRawe_support@gmail.com
-                        </a>
-                    </p>
-                </li>
-                <li class="contacts-item">
-                    <p class="contacts-question">Have a proposal for cooperation?</p>
-                    <p>
-                        <a class="contacts-link" href="mailto:ColoRawe_Cooperation@gmail.com">
-                            ColoRawe_Cooperation@gmail.com
-                        </a>
-                    </p>
-                </li>
-                <li class="contacts-item">
-                    <p class="contacts-question">Advertising questions?</p>
-                    <p>
-                        <a class="contacts-link" href="mailto:ColoRawe_Advertising@gmail.com"> ColoRawe_Advertising@gmail.com</a>
-                    </p>
-                </li>
-            </ul>
-            <div class="footer-info">
-                <p class="footer-copy">2022 ColoRawe &commat;All rights reserved
-                    <br> United States
-                </p>
-                <a class="footer-logo">картинка</a>
+        <div class="container footer-content">
+            <div class="footer-questions">
+                <p>Have a question?</p>
+                <p>Have a proposal for cooperation?</p>
+                <p>Advertising questions?</p>
             </div>
-    </footer>
-      
+            <div class="footer-emails">
+                <p><a href="mailto:ColoRawe_support@gmail.com">ColoRawe_support@gmail.com</a></p>
+                <p><a href="mailto:ColoRawe_Cooperation@gmail.com">ColoRawe_Cooperation@gmail.com</a></p>
+                <p><a href="mailto:ColoRawe_Advertising@gmail.com">ColoRawe_Advertising@gmail.com</a></p>
+            </div>
+        </div>
+        <div class="container footer-bottom">
+            <div class="footer-copy">
+                <p>2022 ColoRawe @All rights reserved</p>
+                <p>United States</p>
+            </div>
+            <img src="./img/logo_2.svg" alt="Nike" />
+        </div>
+    </footer>    
 </body>
 
 </html>
