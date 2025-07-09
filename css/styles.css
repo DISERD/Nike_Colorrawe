@@ -2,15 +2,21 @@
     --font-family: "Roboto", sans-serif;
     --second-family: "Playfair Display", sans-serif;
     --third-family: "PT Serif", sans-serif; 
-    
+
+
+    --light-color: white;
+    --dark-color: black;
+
+    --accent-color: #8E32C6;
     --main-button-color: #8E32C6;
     --main-background-color: #021635;
     --header-background-color: #012D63;
     --footer-background-color: #021635;
     --main-text-color: #FFFFFF;
     --main-nav-color: #C7C7C7;
+    --main-order-color: #959595;
 
-
+    --review-date-color: #D8D8D8;
 }
 
 html {
@@ -28,12 +34,15 @@ body {
     width: 100%;
     padding: 0 15px;
     margin: 0 auto;
+    border: red 1px solid;
 }
+
+/* --- Секція Header --- */
 
 .header {
     background-color: var(--header-background-color);
     padding-top: 16px;
-    padding-bottom: 14px;
+    padding-bottom: 16px;
 }
 
 .header > .container {
@@ -47,15 +56,25 @@ body {
 }
 
 .logo-link {
-    width: 130px;
+    width: 100px;
     height: auto;
     /* max-width: 150px;
     height: auto; */
 }
 
-.nav-list, .lang-list {
+.nav {
+    display: flex;
+    padding-left: 154px;
+}
+
+.nav-list {
     display: flex;
     gap: 29px;
+}
+
+.lang-list {
+    display: flex;
+    gap: 12px;
 }
 
 .nav-link.current, 
@@ -65,33 +84,28 @@ body {
     color: var(--main-text-color);
 }
 
+/* --- Секція Hero --- */
+
 .hero-section {
     background-image: url(../img/background.jpg);
     background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
-    padding-top: 88px;
-    padding-bottom: 188px;
+    background-attachment: fixed;
+
+    height: 890px;
+    width: 100%;
+    padding-top: 94px;
+    padding-bottom: 180px;
 }
 
 .hero-logo {
     width: 190px;
-
-}
-
-
-.hero-logo-img {
-    width: 190px;
-    height: auto;
-}
-
-.hero-text-logo {
-    font-family: var(--third-family);
-    font-weight: 400;
-    font-size: 48px;
-    color: var(--main-text-color);
 }
 
 .hero-title {
+    display: flex;
+    justify-content: flex-start;
     font-family: var(--second-family);
     font-weight: 400;
     font-size: 144px;
@@ -133,7 +147,172 @@ body {
     transition: background-color 0.3s ease, transform 0.1s ease;
 }
 
-.hero-btn:hover,
-.hero-bth:active {
+.hero-btn:hover{
     background-color: #7A28A8;
+}
+
+/* --- Секція Benefits --- */
+
+.benefits-section {
+    padding-top: 105px;
+    padding-bottom: 105px;
+}
+
+.benefits-list {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+
+    width: 1116px;
+    height: 402px;
+
+    border: var(--accent-color) 5px solid;
+
+
+}
+
+.benefit-title {
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 36px;
+    text-align: center;
+    color: var(--main-text-color);
+}
+
+.benefit-img {
+    width: 240px;
+    height: 240px;
+}
+
+
+.benefits-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}    
+
+/* --- Секція Reviews --- */
+
+.reviews-section {
+    border-top: var(--light-color) 2px solid;
+    padding-top: 22px;
+    padding-bottom: 100px;
+}
+
+.reviews-title {
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 48px;
+    text-align: center;
+    color: var(--main-text-color);
+
+    padding-bottom: 36px;
+}
+
+.reviews-list {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 94px;
+}
+
+.review-card {
+    width: 255px;
+    height: 292px;
+
+    padding: 49px 18px 29px 18px;
+}
+
+.review-card.blue {
+    border-radius: 15px;
+
+    box-shadow: 0 14px 0 -5px #7b54b2, 0 30px 0 -13px #533978;
+    background: linear-gradient(135deg, #00e5e6 7.29%, #00a8f7 26.04%, #9a76f9 62.5%, #cc5ec2 100%);;
+  }
+  
+  .review-card.pink {
+    border-radius: 15px;
+   
+    background: linear-gradient(135deg, #ff68b4 0%, #ff45e1 26.04%, #ce3aff 62.84%, #8961ff 100%);
+    box-shadow: 0 15px 0 -5px #9159b1, 0 30px 0 -13px #61337c;
+  }
+  
+  .review-card.orange {
+    border-radius: 15px;
+
+    background: linear-gradient(135deg, #ffe128 0%, #ff9b5c 30.21%, #ff8381 63.29%, #ff5489 100%);
+    box-shadow: 0 14px 0 -5px #b95a4c, 0 30px 0 -13px #732f26;
+  }
+
+.review-text {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 22px;
+    color: var(--main-text-color);
+}
+
+.review-date {
+    padding-top: 8px;
+    padding-bottom: 47px;
+
+
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--review-date-color);
+}
+
+.review-user {
+    display: flex;
+}
+
+.review-name {
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--main-text-color);
+}
+
+.review-member {
+    font-weight: 400;
+    font-size: 12px;
+    color: var(--review-date-color);
+}
+
+.review-user-info {
+    padding-left: 5px;
+}
+
+
+
+
+
+/* --- Секція Order --- */
+
+.order-section {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    border-top: var(--light-color) 2px solid;
+    border-bottom: var(--light-color) 2px solid;
+}
+
+.order-title {
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 48px;
+    color: var(--main-text-color);
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+
+
+
+/* --- Секція Footer --- */
+
+.footer {
+    background-color: var(--footer-background-color);
+    padding-top: 45px;
+    padding-bottom: 45px;
 }
